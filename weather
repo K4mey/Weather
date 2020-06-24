@@ -1,0 +1,14 @@
+#!/bin/bash
+
+notify-send "Please Wait.."
+echo -e "\e[1m\e[33mWarning:\e[0m \e[31mcurl is needed in order for this script to work if you already have it installed ignore this message.\e[0m"
+echo -e "\e[32mQuick weather script based on wttr.in made by Kamey\e[0m"
+echo ""
+echo ""
+echo -e "\e[34mPlease type the name of the location you want to check weather for?\e[0m"
+read location
+echo ""
+curl "http://wttr.in/$location?0"
+
+ 
+
